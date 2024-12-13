@@ -8,5 +8,5 @@ In a world often disconnected,
 ### Socials
 - [Instagram](https://www.instagram.com/thatsocialexperiment/)
 - [Twitter](https://x.com/thatsocialexp)
-- [Facebook](https://www.facebook.com/p/Thatsocialexperiment-61569814703317)
+- [Facebook](https://www.facebook.com/ThatSocialExperiment/)
 - [LinkedIn](https://www.linkedin.com/company/thatsocialexperiment/)
