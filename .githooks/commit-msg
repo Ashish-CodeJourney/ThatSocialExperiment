@@ -1,0 +1,34 @@
+#!/bin/sh
+
+# Commit message file passed as $1
+commit_msg_file="$1"
+
+# Read the commit message
+commit_msg=$(cat "$commit_msg_file")
+
+# Skip merge commits
+if echo "$commit_msg" | grep -Eq '^Merge '; then
+    exit 0
+fi
+
+# Check commit message against Conventional Commits regex
+conventional_commit_regex='^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|revert|release)(\([a-zA-Z0-9_-]+\))?!?: .+'
+
+if echo "$commit_msg" | grep -Eq "$conventional_commit_regex"; then
+    exit 0
+fi
+
+# Display an error message if the commit doesn't match the format
+cat <<EOF
+error: Commit message does not follow the Conventional Commits format.
+Please use the format: <type>(<scope>): <description>
+
+Examples:
+  feat(parser): add ability to parse arrays
+  fix(button): fix padding issue
+
+Your commit message was:
+$commit_msg
+EOF
+
+exit 1
