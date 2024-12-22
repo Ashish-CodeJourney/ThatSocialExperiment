@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Mission from './components/Mission';
-import Gallery from './components/Gallery';
-import Testimonials from './components/Testimonials';
-import Resources from './components/Resources';
-import Join from './components/Join';
-import Contact from './components/Contact';
+import Header from './components/layout/header/Header.tsx';
+import Hero from './components/hero/Hero.tsx';
+import Mission from './features/mission/Mission.tsx';
+import Gallery from './features/gallery/Gallery.tsx';
+import Testimonials from './features/testimonials/Testimonials.tsx';
+import Resources from './features/resources/Resources.tsx';
+import Join from './features/join/Join.tsx';
+import Contact from './features/contact/Contact.tsx';
 import './styles/animations.css';
 
 export default function App() {

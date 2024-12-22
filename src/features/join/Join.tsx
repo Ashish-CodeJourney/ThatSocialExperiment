@@ -1,5 +1,5 @@
 import React from 'react';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useScrollAnimation } from '../../hooks/useScrollAnimation.ts';
 import { Users, Code, Palette, Brain, Calendar, MessageCircle } from 'lucide-react';
 
 const roles = [

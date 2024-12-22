@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Menu } from 'lucide-react';
-import ThemeToggle from '../ThemeToggle';
-import NavLink from './NavLink';
-import MobileMenu from './MobileMenu';
-import Logo from './Logo';
+import ThemeToggle from '../../common/ThemeToggle.tsx';
+import NavLink from './NavLink.tsx';
+import MobileMenu from './MobileMenu.tsx';
+import Logo from './Logo.tsx';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

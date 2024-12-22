@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart, Users, Sparkles } from 'lucide-react';
-import BackgroundVideo from './BackgroundVideo';
+import BackgroundVideo from './BackgroundVideo.tsx';
 
 export default function Hero() {
   return (
