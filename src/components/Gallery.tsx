@@ -39,10 +39,9 @@ export default function Gallery() {
             {images.map((image, index) => (
                 <div key={index} className="relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-all duration-300 ease-in-out transform hover:shadow-2xl group">
                   <ImageCard {...image} />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black opacity-50 group-hover:opacity-40 transition-all duration-300"></div>
-                  <div className="absolute bottom-6 left-6 right-6 text-white group-hover:scale-105 transform transition-all duration-300">
-                    <h3 className="text-2xl font-semibold mb-2 text-shadow">{image.title}</h3>
-                    <p className="text-lg text-opacity-90">{image.description}</p>
+                  <div className="bg-white p-4 rounded-b-lg">
+                    <h3 className="text-2xl font-semibold mb-2">{image.title}</h3>
+                    <p className="text-lg text-gray-600">{image.description}</p>
                   </div>
                 </div>
             ))}
