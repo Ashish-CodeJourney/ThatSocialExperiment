@@ -27,7 +27,7 @@ export default function Contact() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <FaLinkedin className="h-6 w-6 text-rose-500" />
-                    <a href="https://linkedin.com/in/ashish-vaghela" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-rose-500">
+                    <a href="https://linkedin.com/in/ashish-codejourney" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-rose-500">
                       Ashish Vaghela
                     </a>
                   </div>
