@@ -1,18 +1,18 @@
 import React from 'react';
 
-interface NavLinkProps {
+interface MobileNavLinkProps {
     href: string;
     children: React.ReactNode;
     isActive?: boolean;
     onClick?: () => void;
 }
 
-export default function NavLink({ href, children, isActive, onClick }: NavLinkProps) {
+export default function MobileNavLink({ href, children, isActive, onClick }: MobileNavLinkProps) {
     return (
         <a
             href={href}
             onClick={onClick}
-            className={`relative px-4 py-2 text-gray-600 dark:text-gray-300 transition-colors group ${
+            className={`relative block px-4 py-2 text-gray-600 dark:text-gray-300 transition-colors group ${
                 isActive ? 'text-rose-500 dark:text-rose-400' : 'hover:text-rose-500 dark:hover:text-rose-400'
             }`}
         >
