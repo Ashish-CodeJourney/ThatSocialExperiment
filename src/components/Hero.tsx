@@ -4,7 +4,7 @@ import BackgroundVideo from './BackgroundVideo';
 
 export default function Hero() {
   return (
-    <div className="relative min-h-screen pt-20 bg-gradient-to-b from-rose-50/50 to-white dark:from-gray-900 dark:to-gray-800">
+    <div id="about" className="relative min-h-screen pt-20 bg-gradient-to-b from-rose-50/50 to-white dark:from-gray-900 dark:to-gray-800">
       <BackgroundVideo />
       <div className="relative container mx-auto px-4 py-16 md:py-24">
         <div className="text-center max-w-4xl mx-auto">

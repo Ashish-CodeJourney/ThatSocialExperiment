@@ -36,7 +36,7 @@ const values = [
 
 export default function Mission() {
   return (
-      <section className="py-16 md:py-24 bg-rose-50 dark:bg-rose-950/30 text-gray-800 dark:text-white">
+      <section id="mission" className="py-16 md:py-24 bg-rose-50 dark:bg-rose-950/30 text-gray-800 dark:text-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <Target className="h-12 w-12 text-rose-500 mx-auto mb-6 animate-bounce" />
