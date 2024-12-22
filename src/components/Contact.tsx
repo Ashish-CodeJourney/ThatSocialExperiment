@@ -38,7 +38,7 @@ export default function Contact() {
                   <SocialLink href="https://instagram.com/ThatSocialExperiment" icon={FaInstagram} />
                   <SocialLink href="https://twitter.com/thatsocialexp" icon={FaTwitter} />
                   <SocialLink href="https://linkedin.com/company/thatsocialexperiment" icon={FaLinkedin} />
-                  <SocialLink href="https://wa.me/yourphonenumber" icon={FaWhatsapp} />
+                  <SocialLink href="https://wa.me/9714084179" icon={FaWhatsapp} />
                 </div>
               </div>
 
