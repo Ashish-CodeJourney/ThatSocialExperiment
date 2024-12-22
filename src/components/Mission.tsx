@@ -51,7 +51,7 @@ export default function Mission() {
             {values.map((value, index) => (
                 <div
                     key={index}
-                    className="group bg-white text-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105 hover:bg-rose-50"
+                    className="group bg-white text-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 hover:bg-indigo-50 hover:text-indigo-700"
                 >
                   <value.icon className="h-12 w-12 text-indigo-600 mb-6 transition-all duration-300 transform group-hover:scale-110 group-hover:text-indigo-800" />
                   <h3 className="text-2xl font-semibold mb-4">{value.title}</h3>
