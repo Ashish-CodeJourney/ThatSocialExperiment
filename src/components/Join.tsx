@@ -39,7 +39,7 @@ export default function Join() {
     <section id="join" className="py-16 md:py-24 bg-rose-50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Movement</h2>
+          <h2 className="text-4xl font-extrabold text-center mb-16 text-black bg-gradient-to-r from-rose-500 to-indigo-600 bg-clip-text text-transparent">Join Our Movement</h2>
           <p className="text-xl text-gray-600">
             We're looking for passionate individuals who want to make a difference.
             Find your role in our growing community.

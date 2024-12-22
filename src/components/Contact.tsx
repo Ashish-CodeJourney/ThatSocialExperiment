@@ -7,7 +7,7 @@ export default function Contact() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Let's Connect</h2>
+            <h2 className="text-4xl font-extrabold text-center mb-16 text-black bg-gradient-to-r from-rose-500 to-indigo-600 bg-clip-text text-transparent">Let's Connect</h2>
             <p className="text-xl text-gray-600">
               Ready to be part of something meaningful? Reach out to us!
             </p>

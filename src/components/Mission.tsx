@@ -40,7 +40,7 @@ export default function Mission() {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <Target className="h-12 w-12 text-rose-500 mx-auto mb-6 animate-bounce" />
-            <h2 className="text-4xl font-extrabold mb-6">Our Mission</h2>
+            <h2 className="text-4xl font-extrabold text-center mb-16 text-black bg-gradient-to-r from-rose-500 to-indigo-600 bg-clip-text text-transparent">Our Mission</h2>
             <p className="text-xl max-w-xl mx-auto">
               We're on a mission to redefine social interactions by encouraging empathy, collaboration,
               and meaningful connections while promoting mental well-being through safe, judgment-free spaces.

@@ -35,7 +35,7 @@ export default function Resources() {
   return (
     <section ref={ref} className="py-20 bg-rose-50 dark:bg-rose-950/30 scroll-animate fade-up">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
+        <h2 className="text-4xl font-extrabold text-center mb-16 text-black bg-gradient-to-r from-rose-500 to-indigo-600 bg-clip-text text-transparent">
           Resources for Growth
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
