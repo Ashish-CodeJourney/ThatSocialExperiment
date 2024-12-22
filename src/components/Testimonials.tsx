@@ -4,18 +4,18 @@ import { Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "Finding this community changed my life. It's a safe space where I can truly be myself.",
-    author: "Sarah M.",
-    role: "Community Member"
-  },
-  {
-    quote: "The support and understanding I've received here is incredible. It's more than just a group, it's family.",
-    author: "James P.",
+    quote: "This community has been a life-changing experience for me. It's a space where I feel heard and valued.",
+    author: "Aarav Patel",
     role: "Mental Health Advocate"
   },
   {
-    quote: "A beautiful blend of compassion, growth, and genuine connections. Exactly what our world needs.",
-    author: "Elena R.",
+    quote: "The support I've received here has been incredible. It’s more than just a group, it's a family that lifts you up.",
+    author: "Priya Sharma",
+    role: "Community Member"
+  },
+  {
+    quote: "A blend of compassion and personal growth. This community embodies everything that’s missing in the world.",
+    author: "Neha Reddy",
     role: "Wellness Coach"
   }
 ];
@@ -24,29 +24,29 @@ export default function Testimonials() {
   const ref = useScrollAnimation();
 
   return (
-    <section ref={ref} className="py-20 bg-emerald-50 dark:bg-emerald-950/30 scroll-animate fade-up">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
-          Voices of Our Community
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div 
-              key={index}
-              className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
-            >
-              <Quote className="h-8 w-8 text-emerald-500 mb-4" />
-              <p className="text-gray-600 dark:text-gray-300 mb-4 italic">
-                "{testimonial.quote}"
-              </p>
-              <div className="border-t pt-4 dark:border-gray-700">
-                <p className="font-semibold text-gray-800 dark:text-white">{testimonial.author}</p>
-                <p className="text-emerald-600 dark:text-emerald-400 text-sm">{testimonial.role}</p>
-              </div>
-            </div>
-          ))}
+      <section ref={ref} className="py-20 bg-rose-50 dark:bg-rose-950/30 dark:from-rose-700 dark:to-indigo-900 scroll-animate fade-up">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-extrabold text-center mb-16 text-white bg-gradient-to-r from-rose-500 to-indigo-600 bg-clip-text text-transparent">
+            Voices of Our Community
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {testimonials.map((testimonial, index) => (
+                <div
+                    key={index}
+                    className="group bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all transform hover:scale-105 hover:bg-gradient-to-r hover:from-rose-500 hover:to-indigo-600 dark:hover:from-rose-700 dark:hover:to-indigo-900"
+                >
+                  <Quote className="h-12 w-12 text-teal-500 mb-6 animate-pulse group-hover:text-white transition-all duration-300" />
+                  <p className="text-gray-600 dark:text-gray-300 mb-6 italic text-lg group-hover:text-white transition-all duration-300">
+                    "{testimonial.quote}"
+                  </p>
+                  <div className="border-t pt-6 dark:border-gray-700">
+                    <p className="font-semibold text-gray-800 dark:text-white text-xl group-hover:text-white transition-all duration-300">{testimonial.author}</p>
+                    <p className="text-teal-500 dark:text-teal-400 text-sm group-hover:text-white transition-all duration-300">{testimonial.role}</p>
+                  </div>
+                </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 }

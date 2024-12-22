@@ -30,17 +30,24 @@ const images = [
 
 export default function Gallery() {
   return (
-    <section className="py-16 bg-gray-50 dark:bg-gray-800">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">
-          Moments of Connection
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {images.map((image, index) => (
-            <ImageCard key={index} {...image} />
-          ))}
+      <section className="py-20 bg-rose-50 dark:bg-rose-950/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 text-gray-800 dark:text-white">
+            Moments of Connection
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {images.map((image, index) => (
+                <div key={index} className="relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-all duration-300 ease-in-out transform hover:shadow-2xl group">
+                  <ImageCard {...image} />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black opacity-50 group-hover:opacity-40 transition-all duration-300"></div>
+                  <div className="absolute bottom-6 left-6 right-6 text-white group-hover:scale-105 transform transition-all duration-300">
+                    <h3 className="text-2xl font-semibold mb-2 text-shadow">{image.title}</h3>
+                    <p className="text-lg text-opacity-90">{image.description}</p>
+                  </div>
+                </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 }
