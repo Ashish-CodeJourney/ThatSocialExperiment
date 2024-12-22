@@ -7,13 +7,11 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('');
 
-  // Detect scroll position to highlight the active section
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['about', 'mission', 'join', 'contact'];
       const scrollPosition = window.scrollY;
 
-      // Set active link based on scroll position
       sections.forEach((section) => {
         const element = document.getElementById(section);
         if (element) {
