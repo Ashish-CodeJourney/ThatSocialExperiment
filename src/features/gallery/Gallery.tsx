@@ -30,7 +30,7 @@ const images = [
 
 export default function Gallery() {
   return (
-      <section className="py-20 bg-rose-50 dark:bg-rose-950/30">
+      <section id="gallery" className="py-20 bg-rose-50 dark:bg-rose-950/30">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-extrabold text-center mb-16 text-black bg-gradient-to-r from-rose-500 to-indigo-600 bg-clip-text text-transparent">
             Moments of Connection

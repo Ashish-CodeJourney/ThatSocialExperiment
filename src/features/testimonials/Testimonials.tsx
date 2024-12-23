@@ -24,7 +24,7 @@ export default function Testimonials() {
   const ref = useScrollAnimation();
 
   return (
-      <section ref={ref} className="py-20 bg-rose-50 dark:bg-rose-950/30 dark:from-rose-700 dark:to-indigo-900 scroll-animate fade-up">
+      <section id="testimonials" ref={ref} className="py-20 bg-rose-50 dark:bg-rose-950/30 dark:from-rose-700 dark:to-indigo-900 scroll-animate fade-up">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-extrabold text-center mb-16 text-black bg-gradient-to-r from-rose-500 to-indigo-600 bg-clip-text text-transparent">
             Voices of Our Community
