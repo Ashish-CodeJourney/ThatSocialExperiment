@@ -7,25 +7,25 @@ const resources = [
     icon: Book,
     title: "Educational Content",
     description: "Articles and guides on mental wellness, relationships, and personal growth.",
-    link: "#"
+    link: "/resources/educational-content"
   },
   {
     icon: Heart,
     title: "Support Groups",
     description: "Join our virtual support circles for shared experiences and healing.",
-    link: "#"
+    link: "/resources/support-groups"
   },
   {
     icon: Brain,
     title: "Mindfulness Tools",
     description: "Access guided meditations and mindfulness exercises.",
-    link: "#"
+    link: "/resources/mindfulness-tools"
   },
   {
     icon: Users,
     title: "Community Events",
     description: "Participate in workshops, talks, and social gatherings.",
-    link: "#"
+    link: "/resources/community-events"
   }
 ];
 
